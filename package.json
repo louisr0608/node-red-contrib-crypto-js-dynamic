@@ -10,7 +10,6 @@
     "test": "node-red"
   },
   "keywords": [
-    "node-red"
   ],
   "author": "vivekrp",
   "license": "MIT",
@@ -27,8 +26,8 @@
       "decrypt": "cryptojs/decrypt.js",
       "hmac": "cryptojs/hmac.js",
       "digest": "cryptojs/digest.js",
-      "encode": "cryptojs/encode.js",
-      "decode": "cryptojs/decode.js"
+      "encode-msg": "cryptojs/encode.js",
+      "decode-msg": "cryptojs/decode.js"
     }
   }
 }
