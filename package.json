@@ -26,8 +26,8 @@
       "decrypt": "cryptojs/decrypt.js",
       "hmac": "cryptojs/hmac.js",
       "digest": "cryptojs/digest.js",
-      "encode-msg": "cryptojs/encode.js",
-      "decode-msg": "cryptojs/decode.js"
+      "encodemsg": "cryptojs/encodemsg.js",
+      "decodemsg": "cryptojs/decodemsg.js"
     }
   }
 }
