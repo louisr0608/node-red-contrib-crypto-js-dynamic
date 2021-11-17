@@ -23,7 +23,9 @@ module.exports = function (RED) {
 					// debugging message
 					node.debug('Creating a digest of payload using '+node.algorithm);
 					// digest with CryptoJS
-					msg.payload = CryptoJS[node.algorithm](msg.payload, node.key).toString();
+					
+					msg.payload = CryptoJS.HmacSHA256(msg.payload, node.key).toString();
+					//msg.payload = CryptoJS[node.algorithm](msg.payload, node.key).toString();
 				} else {
 					// debugging message
 					node.trace('Nothing to digest: empty payload');
