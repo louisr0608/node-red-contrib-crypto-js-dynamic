@@ -1,7 +1,7 @@
 module.exports = function (RED) {
 	var CryptoJS = require("crypto-js");
 
-	function DecodeNode(config) {
+	function DecodeMsgNode(config) {
 		RED.nodes.createNode(this, config);
 
 		var node = this;
@@ -29,5 +29,5 @@ module.exports = function (RED) {
 		});
 	}
 
-	RED.nodes.registerType("decode", DecodeNode);
+	RED.nodes.registerType("decodemsg", DecodeMsgNode);
 };
