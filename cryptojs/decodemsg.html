@@ -1,5 +1,5 @@
 <script type="text/javascript">
-	RED.nodes.registerType('decode', {
+	RED.nodes.registerType('decodemsg', {
 		category: 'function',
 		color: '#a6bbcf',
 		defaults: {
@@ -9,12 +9,12 @@
 		outputs: 1,
 		icon: "hash.png",
 		label: function () {
-			return this.name || "decode";
+			return this.name || "decodemsg";
 		}
 	});
 </script>
 
-<script type="text/x-red" data-template-name="decode">
+<script type="text/x-red" data-template-name="decodemsg">
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
@@ -33,7 +33,7 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="decode">
+<script type="text/x-red" data-help-name="decodemsg">
     <p>Decode the payload using the specified charset generating an wordArray</p>
     <h3>Input</h3>
     <dl class="message-properties">
